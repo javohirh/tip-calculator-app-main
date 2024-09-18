@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: mono;
+  src: url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+}
+body {
+  background-color: #c5e4e7;
+  font-family: mono;
+}
+.App {
+  background-color: #fff;
+}
+button,
+.custom {
+  font-family: mono;
+  font-weight: 700;
+  font-size: 20px;
+}
+.active-btn {
+  background-color: #9ee8e1;
+  color: #1e6666;
+}
