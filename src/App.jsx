@@ -103,7 +103,7 @@ function App() {
               <h3 className="text-slate-400">{tipAmount} $ / person</h3>
             </div>
             <h2 className="text-4xl text-[#28c5af]">
-              $ {+tipAmount * numPeople}
+              $ {Math.round(+tipAmount * numPeople)}
             </h2>
           </div>
           <div className="flex items-center justify-between">
@@ -111,7 +111,9 @@ function App() {
               <h2 className="text-white">Total</h2>
               <h3 className="text-slate-400">{totalAmount} $ / person</h3>
             </div>
-            <h2 className="text-4xl text-[#28c5af]">$ {+totalAmount + bill}</h2>
+            <h2 className="text-4xl text-[#28c5af]">
+              $ {+totalAmount * numPeople}
+            </h2>
           </div>
           <button
             onClick={handleReset}
